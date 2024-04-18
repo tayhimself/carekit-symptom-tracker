@@ -17,6 +17,12 @@
 		B73601252BD011D30047FCE3 /* Symptom_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73601242BD011D30047FCE3 /* Symptom_TrackerTests.swift */; };
 		B736012F2BD011D40047FCE3 /* Symptom_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B736012E2BD011D40047FCE3 /* Symptom_TrackerUITests.swift */; };
 		B73601312BD011D40047FCE3 /* Symptom_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73601302BD011D40047FCE3 /* Symptom_TrackerUITestsLaunchTests.swift */; };
+		B736013F2BD0122D0047FCE3 /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = B736013E2BD0122D0047FCE3 /* CareKit */; };
+		B73601412BD0122D0047FCE3 /* CareKitFHIR in Frameworks */ = {isa = PBXBuildFile; productRef = B73601402BD0122D0047FCE3 /* CareKitFHIR */; };
+		B73601432BD0122D0047FCE3 /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = B73601422BD0122D0047FCE3 /* CareKitStore */; };
+		B73601452BD0122D0047FCE3 /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = B73601442BD0122D0047FCE3 /* CareKitUI */; };
+		B73601472BD01FCE0047FCE3 /* SymptomTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73601462BD01FCE0047FCE3 /* SymptomTrackerViewController.swift */; };
+		B73601492BD020200047FCE3 /* CareStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73601482BD020200047FCE3 /* CareStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,8 @@
 		B736012A2BD011D40047FCE3 /* Symptom TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Symptom TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B736012E2BD011D40047FCE3 /* Symptom_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symptom_TrackerUITests.swift; sourceTree = "<group>"; };
 		B73601302BD011D40047FCE3 /* Symptom_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symptom_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B73601462BD01FCE0047FCE3 /* SymptomTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomTrackerViewController.swift; sourceTree = "<group>"; };
+		B73601482BD020200047FCE3 /* CareStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B736013F2BD0122D0047FCE3 /* CareKit in Frameworks */,
+				B73601412BD0122D0047FCE3 /* CareKitFHIR in Frameworks */,
+				B73601452BD0122D0047FCE3 /* CareKitUI in Frameworks */,
+				B73601432BD0122D0047FCE3 /* CareKitStore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,9 +113,11 @@
 		B73601092BD011D10047FCE3 /* Symptom Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				B73601482BD020200047FCE3 /* CareStore.swift */,
 				B736010A2BD011D10047FCE3 /* AppDelegate.swift */,
 				B736010C2BD011D10047FCE3 /* SceneDelegate.swift */,
 				B736010E2BD011D10047FCE3 /* ViewController.swift */,
+				B73601462BD01FCE0047FCE3 /* SymptomTrackerViewController.swift */,
 				B73601102BD011D10047FCE3 /* Main.storyboard */,
 				B73601162BD011D30047FCE3 /* Assets.xcassets */,
 				B73601182BD011D30047FCE3 /* LaunchScreen.storyboard */,
@@ -146,6 +160,12 @@
 			dependencies = (
 			);
 			name = "Symptom Tracker";
+			packageProductDependencies = (
+				B736013E2BD0122D0047FCE3 /* CareKit */,
+				B73601402BD0122D0047FCE3 /* CareKitFHIR */,
+				B73601422BD0122D0047FCE3 /* CareKitStore */,
+				B73601442BD0122D0047FCE3 /* CareKitUI */,
+			);
 			productName = "Symptom Tracker";
 			productReference = B73601072BD011D10047FCE3 /* Symptom Tracker.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +238,9 @@
 				Base,
 			);
 			mainGroup = B73600FE2BD011D10047FCE3;
+			packageReferences = (
+				B736013D2BD0122D0047FCE3 /* XCRemoteSwiftPackageReference "CareKit" */,
+			);
 			productRefGroup = B73601082BD011D10047FCE3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,9 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73601472BD01FCE0047FCE3 /* SymptomTrackerViewController.swift in Sources */,
 				B73601152BD011D10047FCE3 /* Symptom_Tracker.xcdatamodeld in Sources */,
 				B736010F2BD011D10047FCE3 /* ViewController.swift in Sources */,
 				B736010B2BD011D10047FCE3 /* AppDelegate.swift in Sources */,
+				B73601492BD020200047FCE3 /* CareStore.swift in Sources */,
 				B736010D2BD011D10047FCE3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -611,6 +636,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B736013D2BD0122D0047FCE3 /* XCRemoteSwiftPackageReference "CareKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/carekit-apple/CareKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B736013E2BD0122D0047FCE3 /* CareKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B736013D2BD0122D0047FCE3 /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKit;
+		};
+		B73601402BD0122D0047FCE3 /* CareKitFHIR */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B736013D2BD0122D0047FCE3 /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitFHIR;
+		};
+		B73601422BD0122D0047FCE3 /* CareKitStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B736013D2BD0122D0047FCE3 /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitStore;
+		};
+		B73601442BD0122D0047FCE3 /* CareKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B736013D2BD0122D0047FCE3 /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B73601132BD011D10047FCE3 /* Symptom_Tracker.xcdatamodeld */ = {
